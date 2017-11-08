@@ -253,18 +253,23 @@ body, html {
 footer {
   padding-bottom: 20px;
   padding-top: 20px;
-  background-color: #2C2743;
-  color: rgba(255, 255, 255, 0.90);
+  background-color: white;
+  color: rgba(39, 50, 56, 0.9);
   box-shadow: 0px 1000px 0px 1000px #2C2743;
+  border-top: solid 1px #ECEFF1;
 }
 
 footer h4 {
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.90);
+  color: rgba(39, 50, 56, 0.9);
 }
 
 footer a {
-  color: #1FAD5C;
+  color: rgba(39, 50, 56, 0.9);
+}
+
+footer a:hover {
+  color: rgba(142, 45, 86, 0.9);
 }
 
 footer ul {
