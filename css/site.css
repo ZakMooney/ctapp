@@ -194,10 +194,13 @@ body, html {
   color: #1FAD5C;
 }
 
+.overlay .logo a {
+  padding: 0px;
+}
+
 .overlay .closebtn {
   position: absolute;
-  transition: 0s!important;
-  top: -2%;
+  top: 0%;
   right: 5%;
   font-size: 60px;
   line-height: 60px;
