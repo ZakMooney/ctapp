@@ -5,16 +5,15 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 25px;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 h1 {
-  color: rgba(0, 0, 0, 0.90);
+  color: rgba(39, 50, 56, 0.9);
 }
 
 h2, h3, h4, h5, h6 {
-  color: #3e3e3e;
+  color: rgba(39, 50, 56, 0.8);
 }
 
 p {
@@ -23,12 +22,13 @@ p {
 }
 
 .sub-title {
-  font-family: 'PT Serif', serif;
+  /*font-family: 'Roboto Slab', serif;*/
+  font-family: 'Roboto', sans-serif;
 }
 
 body, html {
-  font-family: 'PT Sans', sans-serif;
-  color: rgba(0, 0, 0, 0.54);
+  font-family: 'Roboto', sans-serif;
+  color: rgba(39, 50, 56, 0.6);;
 }
 
 /*Nav Bar*/
@@ -49,16 +49,12 @@ body, html {
 }
 
 #sticky-header {
-  transition:box-shadow 0.5s;
-  -moz-transition:box-shadow 0.5s;
-  -webkit-transition:box-shadow 0.5s;
-  -ms-transition:box-shadow 0.5s;
-  -o-transition:box-shadow 0.5s;
+  border-bottom: solid 1px #ECEFF1;
   z-index: 5;
 }
 
 #sticky-header.active {
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  border-bottom: solid 1px #ECEFF1;
 }
 
 #sticky-header > .top-bar, #sticky-header > .top-bar ul {
@@ -66,7 +62,7 @@ body, html {
 }
 
 #sticky-header > .top-bar a {
-  color: #1FAD5C;
+  color: rgba(39, 50, 56, 0.9);
 }
 
 #sticky-header, .sticky-container {
@@ -80,6 +76,11 @@ body, html {
 .top-bar {
   padding-top: auto;
   padding-bottom: auto;
+}
+
+.top-bar li {
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif
 }
 
 .menu.vertical > li {
@@ -127,7 +128,7 @@ body, html {
 }
 
 .is-dropdown-submenu {
-  margin-top: -3px;
+  margin-top: 15px;
   min-width: 250px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -150,16 +151,16 @@ body, html {
 }
 
 .overlay {
-    height: 0%;
-    width: 100%;
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    background-color: rgb(255,255,255);
-    background-color: rgba(255,255,255, 0.9);
-    overflow-y: hidden;
-    transition: 0.5s;
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: rgb(255,255,255);
+  background-color: rgba(255,255,255, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
 }
 
 .overlay h2 {
@@ -177,28 +178,30 @@ body, html {
 }
 
 .overlay-content {
-    position: relative;
-    top: 6%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
+  position: relative;
+  top: 6%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    display: block;
-    transition: 0.3s;
-    color: #1FAD5C;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  color: #1FAD5C;
 }
 
 .overlay .closebtn {
-    position: absolute;
-    top: -2%;
-    right: 5%;
-    font-size: 60px;
-    line-height: 60px;
-    color: rgba(0,0,0, 0.9);
+  position: absolute;
+  transition: 0s!important;
+  top: -2%;
+  right: 5%;
+  font-size: 60px;
+  line-height: 60px;
+  color: rgba(0,0,0, 0.9);
 }
 
 .is-submenu-item .material-icons {
@@ -209,6 +212,37 @@ body, html {
 .overlay-content .material-icons {
   font-size: 16px;
   padding-left: 10px;
+}
+
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 1rem 0;
+  padding: 0.85rem 2rem;
+  -webkit-appearance: none;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  font-size: 0.9rem;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f0476e;
+  color: white;
+}
+
+.top-bar .button {
+  color: white!important;
+  padding: 0.85rem 2rem;
+  margin-right: 30px;
+}
+
+.button:hover, .button:focus {
+  background-color: #8e2d56;
+}
+
+.title-bar .menu-icon {
+  margin-right: 20px;
 }
 
 /*footer*/
