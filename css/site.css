@@ -1,4 +1,9 @@
 /*body*/
+
+.row {
+  max-width: 70rem;
+}
+
 .row.banner {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -238,6 +243,7 @@ body, html {
   color: white!important;
   padding: 0.85rem 2rem;
   margin-right: 30px;
+  margin-left: 30px;
 }
 
 .button:hover, .button:focus {
@@ -246,6 +252,10 @@ body, html {
 
 .title-bar .menu-icon {
   margin-right: 20px;
+}
+
+.banner img {
+  max-height: 400px;
 }
 
 /*footer*/
@@ -339,9 +349,10 @@ footer :last-child > .accordion-content:last-child {
   height: 100%;
   z-index: 1;
   opacity: 0.5;
-  background-image: url(/images/pages/geo.svg);
+  background-image: url(/images/pages/pill-pattern.svg);
   background-repeat: repeat;
-  background-size: 25%;
+  background-size: 100%;
+  /*background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);*/
 }
 
 .bg-top h1, .bg-top h3, .bg-top img, .bg-top a {
@@ -360,6 +371,67 @@ footer :last-child > .accordion-content:last-child {
 
 .home-banner h3 {
  margin-bottom: 25px;
+}
+
+.home-trio {
+  border-bottom: solid 1px #ECEFF1;
+  border-top: solid 1px #ECEFF1;
+}
+
+.home-trio .material-icons {
+  font-size: 60px;
+}
+
+.home-trio > div > div:nth-child(1) > .material-icons {
+  color: #f0476e;
+}
+
+.home-trio > div > div:nth-child(2) > .material-icons {
+  color: #f0476e;
+}
+
+.home-trio > div > div:nth-child(3) > .material-icons {
+  color: #f0476e;
+}
+
+
+.home-feature-container {
+  position: relative;
+  background: white;
+  overflow: hidden;
+}
+
+.home-feature-container:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.5;
+  background-image: url(/images/pages/pill-pattern.svg);
+  background-repeat: repeat;
+  background-size: 100%;
+}
+
+.home-feature {
+  z-index: 2;
+  position: relative;
+  background-color: white;
+  border: solid 1px #ECEFF1;
+  border-radius: 15px;
+  padding: 50px;
+  margin-bottom: 80px;
+}
+
+.home-feature:nth-child(3){
+  margin-bottom: 0px;
+}
+
+.home-feature img {
+  max-height: 300px;
 }
 
 .banner > .large-12 > div > img {

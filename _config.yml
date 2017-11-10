@@ -1,10 +1,10 @@
 # Site settings
-title: WiFi Orchestration Tool
+title: Hotspot Management Tool
 email: hello@ct-networks.io
 description: > # this means to ignore newlines until "baseurl:"
-  CT WiFi is full-stack Wi-Fi. It's the only platform you'll ever need.
+  Create beautiful hotspots with MIMO.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://ct-networks.io" # the base hostname & protocol for your site
+url: "https://get.mimo.today" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
